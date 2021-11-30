@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      body {
+        height: 5000px;
+      }
+
+      main {
+        background: #f4f4f4;
+        border: #333 1px solid;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #ccc;
+        border: #333 3px dashed;
+      }
+
+      #box-1 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background: blue;
+        z-index: 1;
+      }
+      #box-2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: yellowgreen;
+      }
+      #box-3 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background: green;
+      }
+      #box-4 {
+        position: relative;
+        background: rebeccapurple;
+      }
+      #box-5 {
+        position: sticky;
+        top: 0;
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <main> -->
+    <div id="box-1" class="box"></div>
+    <div class="container">
+      <div id="box-2" class="box"></div>
+      <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+        ea, numquam voluptate aliquid ipsa eos explicabo laboriosam assumenda
+        ducimus? Possimus numquam illo, commodi et doloribus tempora quo nam
+        perspiciatis laudantium veniam sequi porro quaerat adipisci quae omnis
+        alias, unde suscipit ut maxime veritatis praesentium. Ad, vel. Ab rerum,
+        nostrum esse similique deleniti deserunt! Cupiditate, delectus! Est
+        voluptatibus, dolorum reiciendis harum eius iste qui sint. Veniam,
+        molestias unde, quo doloribus neque sunt nisi suscipit aspernatur
+        aliquid sit dolor labore commodi omnis maxime quasi. Quibusdam, fugiat!
+        Architecto, cum. Culpa at a voluptatibus assumenda necessitatibus
+        aliquam fuga, inventore earum amet nulla in voluptate.
+      </p>
+    </section>
+    <!-- </main> -->
+  </body>
+</html>

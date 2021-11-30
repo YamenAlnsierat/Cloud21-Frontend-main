@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic gris</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: 200px 200px 200px; */
+        /* grid-template-columns: 200px 200px auto; */
+        /* grid-template-columns: repeat(3, auto); */
+        grid-template-columns: 1fr 2fr 1fr;
+
+        gap: 1rem;
+      }
+
+      .item {
+        background-color: #f4f4f4;
+        border: #888 solid 1px;
+        text-align: center;
+        padding: 3rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">Rubrik 1</div>
+      <div class="item">Rubrik 2</div>
+      <div class="item">Rubrik 3</div>
+    </section>
+    <main>
+      <section>
+        <h4>Rubrik</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tempore
+          quidem in aliquid blanditiis! Labore in temporibus unde repellendus
+          iste sit doloremque facere explicabo beatae quos nesciunt, odit,
+          voluptate minima.
+        </p>
+      </section>
+      <aside>
+        <h4>Nyheter</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ullam
+          repellat atque soluta odit ex quibusdam aliquid commodi incidunt enim!
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>

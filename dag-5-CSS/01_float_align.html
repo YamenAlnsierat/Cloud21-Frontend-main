@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float & alignment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        width: 480px;
+        margin: 30px auto;
+      }
+
+      .box {
+        background: #f4f4f4;
+        border: #333 solid 1px;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+      .box h4 {
+        text-align: center;
+      }
+
+      .box p {
+        text-align: justify;
+      }
+
+      #box-2 {
+        float: left;
+        width: 50%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 45%;
+      }
+
+      /* Trick för att återställa float */
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="box-1" class="box">
+        <h4>Rubrik 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam
+          doloremque alias exercitationem aspernatur, eum maiores porro in
+          inventore reiciendis.
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h4>Rubrik 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          dicta deleniti consequatur saepe voluptatibus soluta ea accusamus
+          tenetur quae praesentium?
+        </p>
+      </div>
+      <div id="box-3" class="box">
+        <h4>Rubrik 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          dicta deleniti consequatur saepe voluptatibus soluta ea accusamus
+          tenetur quae praesentium?
+        </p>
+      </div>
+      <div class="clear"></div>
+      <div id="box-4" class="box">
+        <h4>Rubrik 4</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          dicta deleniti consequatur saepe voluptatibus soluta ea accusamus
+          tenetur quae praesentium?
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

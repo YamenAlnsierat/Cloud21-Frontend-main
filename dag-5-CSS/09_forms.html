@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,200;0,400;0,700;1,100;1,200&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forms</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Open Sans', sans-serif;
+        background: #344a72;
+        color: #fff;
+        line-height: 30px;
+      }
+
+      .container {
+        margin: 50px auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        background: #fff;
+        color: #333;
+        padding: 15px 25px;
+        border: #333 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+
+      .form-wrap p {
+        color: #344a72;
+        font-weight: bold;
+      }
+
+      .form-wrap .form-group {
+        margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+        display: block;
+        color: #666;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        color: #666;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0;
+        background: #49c1a2;
+        color: #f4f4f4;
+        cursor: pointer;
+        border: #37a08e 1px solid;
+      }
+
+      .form-wrap button:hover {
+        background: #37a08e;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="form-wrap">
+          <h1>Registrering</h1>
+          <p>Gratis medlemskap</p>
+          <form>
+            <div class="form-group">
+              <label for="first-name">Förnamn</label>
+              <input
+                type="text"
+                name="firstName"
+                id="first-name"
+                placeholder="Ange förnamn"
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Efternamn</label>
+              <input
+                type="text"
+                name="lastName"
+                id="last-name"
+                placeholder="Ange efternamn"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Post</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Ange e-post"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Ange ett telefonnummer"
+              />
+            </div>
+            <button type="submit" class="btn">Registrera</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

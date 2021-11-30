@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigering</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        /* margin: 0;
+        padding: 0; */
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        padding: 50px 40px;
+      }
+
+      .navbar {
+        list-style: none;
+        background: #344a72;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+
+      .navbar li {
+        float: left;
+      }
+
+      .navbar li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 10px;
+      }
+
+      .navbar li a:hover {
+        background: #3f51b5;
+        color: orange;
+      }
+
+      /* Left-side menu */
+      .left-menu {
+        list-style: none;
+        border: #ddd 1px solid;
+        width: 250px;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .left-menu li {
+        font-size: 18px;
+        line-height: 32px;
+        border-bottom: #ddd 1px dashed;
+      }
+
+      .left-menu li:last-child {
+        border: none;
+      }
+
+      .left-menu li a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .left-menu li a:hover {
+        color: #303f9f;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="">Start</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Verkstad</a></li>
+          <li><a href="">Om Oss</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul class="left-menu">
+        <li><a href="">Start</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Verkstad</a></li>
+        <li><a href="">Om Oss</a></li>
+      </ul>
+    </main>
+  </body>
+</html>

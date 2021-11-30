@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Rows</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-auto-rows: 2fr;
+        gap: 1rem;
+      }
+
+      .item {
+        padding: 3rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background: #f4f4f4;
+        border: #888 1px solid;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">Rubrik 1</div>
+      <div class="item">Rubrik 2</div>
+      <div class="item">Rubrik 3</div>
+      <div class="item">Rubrik 4</div>
+      <div class="item">Rubrik 5</div>
+    </section>
+  </body>
+</html>

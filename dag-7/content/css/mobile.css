@@ -1,0 +1,36 @@
+#navbar ul,
+#navbar ul li {
+  float: none;
+}
+
+#navbar ul li a {
+  padding: 0.4rem;
+  text-align: center;
+  border-bottom: #444 dotted 1px;
+}
+
+.showcase-content h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+#gallery-content .gallery-image {
+  /* background: url('/dag-4/content/img/show.jpg') center center/cover no-repeat; */
+  width: 100%;
+  min-height: 100%;
+}
+
+#gallery-content .gallery-info {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
+}
+
+.box {
+  width: 100%;
+  padding: 3rem;
+}
